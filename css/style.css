@@ -27,3 +27,52 @@ img {
     width: 250px;
     opacity: 0.5;
 }
+
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background: purple;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+
+.flexGrowContainer {
+    display: flex;
+    align-items:stretch;
+    background-color: purple;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+section > article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex: 1;
+}
+
+sidebar {
+    background-color:burlywood;
+    min-width: fit-content;
+    padding-right: 50px;
+}

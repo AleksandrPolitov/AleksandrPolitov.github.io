@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta name="author" content="Aleksandr Politov" />
     <meta name="description" content="Exercise 2.1 for first week of static web site development course in HAMK." />
+    <style>
+        
+/*  Flexcontainer in a row. */
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  align-content: space-between;
+}
+
+.flexContainer > div, div {
+  background-color: yellow;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  width:100%;
+}
+/*  Flexcontainer in a column: use flex-direction:column;. */
+.flexContainerCol {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: red;
+  flex-direction: column;
+}
+
+/* Flex-grow, to have different sizes of flex box */
+/* The align-content:Stretch stretches to the take the remaining space */
+.flexgrowcon {
+  display:flex;
+  align-items: stretch;
+  background-color: blue;
+}
+
+    </style>
     <title>Aleksandr Politov – Exercise 2.1</title>
 </head>
 <body>
@@ -24,11 +59,11 @@
     <!-- Aleksandr Politov -->
     <a href="./images/devenvironment.png" download>Download file</a>
 
-    
-    <p id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p id="two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p id="three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+    <div class="flexContainer">
+        <div id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div id="two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div id="three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
     <a href="#one"><abbr title="one">Go to 1st paragraph</abbr></a><br>
     <a href="#two"><abbr title="two">Go to 2nd paragraph</abbr></a><br>
     <a href="#three"><abbr title="three">Go to 3rd paragraph</abbr></a><br>
